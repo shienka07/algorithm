@@ -50,6 +50,11 @@ class Solution {
             answer[j] = aList.get(j);
         }
         
+        // if(answer.length == 0){
+        //    answer = new int[1];
+        //    answer[0] = (-1);
+        // }
+        
         Arrays.sort(answer);
         
         return answer;
