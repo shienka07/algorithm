@@ -22,3 +22,20 @@ numbers	result
 1, 2, 3이 numbers에 없으므로, 1 + 2 + 3 = 6을 return 해야 합니다.
 
 */
+
+
+class Solution {
+    public int solution(int[] numbers) {
+        int answer = 45;
+        
+        for(int i = 0; i < numbers.length; i++){
+            for(int j = 1; j <= 9; j++){
+                if(numbers[i] == j){
+                    answer -= numbers[i];
+                }
+            }
+        }
+
+        return answer;
+    }
+}
