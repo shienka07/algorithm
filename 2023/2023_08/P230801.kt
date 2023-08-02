@@ -15,31 +15,33 @@ numbers	result
 [0, 31, 24, 10, 1, 9]	744
 */
 
-class Solution {
-    fun solution(numbers: IntArray): Int {
-        var answer: Int = 0
-        
-        var list = numbers.sorted()
-        
-        var size = list.size
-        
-        var num1 = list.get(size-1)
-        var num2 = list.get(size-2)
-        
-        
-        answer = num1 * num2
-        
-        return answer
+class P230801 {
+    class Solution {
+        fun solution(numbers: IntArray): Int {
+            var answer: Int
+            
+            var list = numbers.sorted()
+            
+            var size = list.size
+            
+            var num1 = list.get(size-1)
+            var num2 = list.get(size-2)
+            
+            
+            answer = num1 * num2
+            
+            return answer
+        }
     }
-}
 
 
-// 두번째 풀이
+    // 두번째 풀이
 
-class Solution2 {
-    fun solution2(numbers: IntArray): Int {
-        var st = numbers.sorted()
+    class Solution2 {
+        fun solution2(numbers: IntArray): Int {
+            var st = numbers.sorted()
 
-        return st[st.size-1] * st[st.size-2]
+            return st[st.size-1] * st[st.size-2]
+        }
     }
 }
