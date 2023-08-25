@@ -20,7 +20,7 @@ i	j	k	result
 class P230826 {
     class Solution {
         fun solution(i: Int, j: Int, k: Int): Int {
-            var answer: Int = 0
+            var answer: Int
             var str: String = ""
             
             for(num in i..j){
