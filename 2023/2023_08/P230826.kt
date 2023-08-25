@@ -28,7 +28,6 @@ class P230826 {
             }
             
             answer = str.count {it == Integer.toString(k)[0]}
-            
             return answer
         }
     }
