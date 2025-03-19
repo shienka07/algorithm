@@ -42,7 +42,6 @@ A와 B의 핸드폰 번호 궁합률을 두자리 정수로 출력한다.
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.math.BigInteger;
 
 public class B250319 {
     public static void main(String[] args) throws IOException {
